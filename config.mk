@@ -1,8 +1,12 @@
 # config.mk
-# Version: 1.3.0
-# Author: Wesley J. Landaker <wjl@icecavern.net>
+# by Wesley J. Landaker
+#
+# Version 1.4.0
 
-# Configures make to operate better, taking us a few tiny steps closer to having a decent build tool.
+# GNU Make configuration with good defaults.
+#
+# This work is marked with CC0 1.0. To view a copy of this license, visit
+# https://creativecommons.org/publicdomain/zero/1.0/
 
 ####################
 # Standard Targets #
