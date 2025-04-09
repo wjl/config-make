@@ -1,7 +1,7 @@
 # config.mk
 # by Wesley J. Landaker
 #
-# Version 1.5.0
+# Version 1.5.1
 
 # GNU Make configuration with good defaults.
 #
@@ -52,6 +52,7 @@ ifdef VPATH
 DONT_USE_VPATH: $(error Using VPATH is deprecated and harmful.)
 endif
 override VPATH :=
+vpath
 
 # Prevent implicit makefiles.
 ifdef MAKEFILES
