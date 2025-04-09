@@ -1,7 +1,7 @@
 # config.mk
 # by Wesley J. Landaker
 #
-# Version 1.4.0
+# Version 1.5.0
 
 # GNU Make configuration with good defaults.
 #
@@ -52,7 +52,6 @@ ifdef VPATH
 DONT_USE_VPATH: $(error Using VPATH is deprecated and harmful.)
 endif
 override VPATH :=
-vpath
 
 # Prevent implicit makefiles.
 ifdef MAKEFILES
@@ -89,7 +88,7 @@ MAKEFLAGS += --warn-undefined-variables
 
 # Run rules in a single bash shell with error-checking turned on.
 override SHELL := bash
-.SHELLFLAGS: -e -u -o pipefail -c
+.SHELLFLAGS = -e -u -o pipefail -c
 .ONESHELL:
 
 # Don't print out receipes.
